@@ -16,23 +16,37 @@ box-sizing: border-box;
  overflow: hidden;
  margin: auto;
  margin-top: 30px;
-border-bottom: green solid 10px;
+border-bottom: green solid 3px;
 background: linear-gradient(#00BFFF	,#FFF8DC	);
 
+}
+#score{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  margin-left: 15px;
+  margin-top: 15px;
 }
 .clouds{
 
   position: absolute;
-  width: 300px;
+  width: 350px;
   top: 0;
   animation: clouds-animation 15s infinite linear;
 
+}
+.sun{
+
+  width: 150px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
   
 .homer{
 width: 150px;
 bottom: 0;
 position: absolute;
+padding: 0;
 
 }
 .jump{
@@ -62,12 +76,31 @@ animation: jump 500ms ease-out;
     }
 
     50%{
-        bottom: 150px;
+        bottom: 180px;
     }
+    60%{
 
-    100%{
+      bottom: 160px ;
+    }
+    70%{
 
-        bottom: 0;
+      bottom: 150px;
+
+    }
+    80%{
+
+      bottom:130px ;
+
+    }
+    90%{
+
+     bottom: 110px;
+
+    }
+    
+    100%{ 
+
+        bottom: 0px;
 
     }
 
@@ -90,7 +123,9 @@ animation: jump 500ms ease-out;
 
  position: absolute;
  right: 0;
- width: 90px;
+ width: 100px;
  bottom: 0;
- animation: duff-animation  2s infinite linear;
+ animation: duff-animation  1.4s infinite linear;
+ padding: 0;
+ margin-bottom: 0;
 }
